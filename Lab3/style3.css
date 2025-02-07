@@ -18,3 +18,31 @@
     display: block;
     margin: 0 auto 10px;
 }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    text-align: center;
+}
+
+.item1{
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.item1:hover{
+    background-color: #bdbbbb;
+}
+
+#dropdown:hover{
+
+}
+
+.dropdown-content{
+    position: relative;
+    display: inline-block;
+}
