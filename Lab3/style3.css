@@ -24,6 +24,7 @@
     flex-direction: row;
     background-color: #333;
     text-align: center;
+    position:relative;
 }
 
 .item1{
@@ -38,11 +39,36 @@
     background-color: #bdbbbb;
 }
 
-#dropdown:hover{
-
+.dropdown{
+    display:None;
+    position:absolute;
+    top:100%;
+    left:0;
+    margin-left:10px;
+    margin-top:0px;
+    background-color:white;
+    min-width:200px;
 }
 
-.dropdown-content{
-    position: relative;
-    display: inline-block;
+.dropdown div{
+    padding:10px;
+    color:black;
+    border-bottom:1px solid #ddd;
+}
+
+.dropdown div:hover{
+    background-color:#f1f1f1;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.item1:hover .dropdown{
+    display:block;
+}
+
+.item1:nth-child(1) a:hover{
+    background-color:#bdbbbb;
 }
